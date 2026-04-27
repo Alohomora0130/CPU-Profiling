@@ -1,0 +1,13 @@
+{
+  "data_dir": "/var/lib/continuous-cpu-profiler",
+  "slice_seconds": 60,
+  "retention_hours": 72,
+  "frequency_hz": 99,
+  "event": "cpu-clock",
+  "call_graph": "fp",
+  "perf_binary": "perf",
+  "flamegraph_dir": "/opt/FlameGraph",
+  "target": "system",
+  "sleep_binary": "sleep",
+  "extra_perf_args": []
+}

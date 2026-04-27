@@ -1,0 +1,9 @@
+{
+  "data_dir": "./data",
+  "flamegraph_dir": "/opt/FlameGraph",
+  "perf_binary": "perf",
+  "frequency_hz": 99,
+  "slice_seconds": 10,
+  "retention_hours": 24,
+  "extra_perf_args": []
+}

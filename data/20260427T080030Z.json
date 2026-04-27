@@ -1,0 +1,25 @@
+{
+  "started_at": "2026-04-27T08:00:30.426960+00:00",
+  "ended_at": "2026-04-27T08:00:44.204685+00:00",
+  "perf_data_path": "data/20260427T080030Z.data",
+  "metadata_path": "data/20260427T080030Z.json",
+  "command": [
+    "perf",
+    "record",
+    "-F",
+    "99",
+    "-e",
+    "cpu-clock",
+    "-g",
+    "--call-graph",
+    "fp",
+    "-o",
+    "data/20260427T080030Z.data.partial",
+    "-a",
+    "--",
+    "sleep",
+    "10"
+  ],
+  "stdout": "",
+  "stderr": "[ perf record: Woken up 1 times to write data ]\n[ perf record: Captured and wrote 0.845 MB data/20260427T080030Z.data.partial (5942 samples) ]"
+}

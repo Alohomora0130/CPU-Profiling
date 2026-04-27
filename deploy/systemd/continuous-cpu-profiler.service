@@ -1,0 +1,21 @@
+[Unit]
+Description=Continuous CPU Profiler
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/opt/continuous-cpu-profiler
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 -m continuous_cpu_profiler.cli collect --config /etc/continuous-cpu-profiler.json
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+ReadWritePaths=/var/lib/continuous-cpu-profiler
+
+[Install]
+WantedBy=multi-user.target
